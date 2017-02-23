@@ -1,10 +1,10 @@
 # BrewLeg
 A simple boilerplate for `babel-redux-eslint-webpack-less-enzyme-gulp`
 
-## Download and install Node v6.7.0
+## Download and install Node v6.7.0 (or newer)
 https://nodejs.org/download/release/v6.7.0/
 
-## Upgrade npm to version 3.10.7
+## Upgrade npm to version 3.10.7 (or newer)
 on windows go to `C:\Program Files\nodejs` and run
 
 ```sh
