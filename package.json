@@ -1,0 +1,73 @@
+{
+  "name": "brewleg",
+  "version": "1.0.0",
+  "description": "react redux boilerplate",
+  "scripts": {
+    "start": "gulp",
+    "debug": "set APP_ENV=development && gulp",
+    "test": "mocha tests/.setup.js tests/**/*.test.js",
+    "build": "set APP_ENV=production && npm run test && gulp build",
+    "build-unix": "export APP_ENV=production && $NPM run test && gulp build",
+    "deploy-test": "set APP_ENV=production && gulp build && gulp deploy-test"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "boilerplate"
+  ],
+  "authors": [
+    "Radu Gaspar <radu.bogdan.gaspar@gmail.com>"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=6.7.0",
+    "npm": "^3.10.7"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-core": "^6.17.0",
+    "babel-eslint": "^7.0.0",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "chai": "^3.5.0",
+    "copy-webpack-plugin": "^3.0.1",
+    "css-loader": "^0.25.0",
+    "deep-freeze": "0.0.1",
+    "enzyme": "^2.5.1",
+    "eslint": "^3.8.1",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-loader": "^1.6.0",
+    "eslint-plugin-babel": "^3.3.0",
+    "eslint-plugin-import": "^2.0.1",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.4.1",
+    "file-loader": "^0.9.0",
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.7",
+    "html-webpack-plugin": "^2.22.0",
+    "jsdom": "^9.8.0",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "mocha": "~2.4.x",
+    "react-addons-test-utils": "^15.3.2",
+    "redux-devtools": "^3.3.1",
+    "redux-devtools-dock-monitor": "^1.1.1",
+    "redux-devtools-log-monitor": "^1.0.11",
+    "rimraf": "^2.5.4",
+    "scp2": "^0.5.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-redux": "^4.4.5",
+    "react-tooltip": "^3.2.3",
+    "redux": "^3.6.0"
+  }
+}
